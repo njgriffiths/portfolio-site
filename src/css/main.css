@@ -499,6 +499,8 @@ table {
   margin: 0 auto;
   max-width: 900px;
   padding: 0 1em 2em 1em; }
+  #portfolio a {
+    text-decoration: none; }
   #portfolio #projects {
     margin-top: 3em; }
   #portfolio .project {
@@ -665,14 +667,3 @@ table {
 /* ------------------------------------------------ */
 /* MEDIA QUERIES
 /* ------------------------------------------------ */
-@font-face {
-  font-family: 'Unica-Pro';
-  src: url("../fonts/NeueHaasUnicaPro-Thin.ttf");
-  font-weight: normal;
-  font-style: normal; }
-
-@font-face {
-  font-family: 'Unica-W1G';
-  src: url("../fonts/NeueHaasUnicaW1G-Thin.ttf");
-  font-weight: normal;
-  font-style: normal; }

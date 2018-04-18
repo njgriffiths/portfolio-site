@@ -44,7 +44,7 @@ gulp.task('browserify', () => {
 			insertGlobals: true
 		}))
 		.pipe(rename('bundle.js'))
-		.pipe(gulp.dest(folder.build))
+		.pipe(gulp.dest(folder.build + 'js'))
 		.pipe(gulp.dest(folder.src + 'js'))
 		.pipe(reload({ stream: true }))
 });
@@ -74,8 +74,8 @@ gulp.task('clean', function() {
 
 // Image processing
 gulp.task('images', () => {
-	const output = folder.build + 'img/';
-	return gulp.src(folder.src + 'img/**/*')
+	const output = folder.build + 'images/';
+	return gulp.src(folder.src + 'images/**/*')
 		.pipe(newer(output))
 		.pipe(imagemin({ optimizationLevel: 5 }))
 		.pipe(gulp.dest(output));
@@ -90,9 +90,9 @@ gulp.task('favicons', () => {
 
 // JS uglify
 gulp.task('ugly-js', ['browserify'], () => {
-	return gulp.src(folder.public + 'js/bundle.js')
+	return gulp.src(folder.src + 'js/bundle.js')
 		.pipe(stripdebug()) // remove logs & comments
-		// .pipe(uglify()) // do this via webpackConfig
+		// .pipe(uglify()) 
 		.pipe(gulp.dest(folder.build + 'js/'));
 });
 
