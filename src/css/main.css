@@ -596,28 +596,41 @@ table {
     font-size: 2.5em;
     font-weight: 200;
     margin-bottom: 0; }
-  #portfolio header h3 {
+  #portfolio .subhead {
     font-size: 0.9125em;
     font-weight: 200;
     color: #969696;
     margin-top: -5px; }
+  #portfolio .subhead p {
+  	margin-block-start: 0;
+  	margin-block-end: 0;
+  }
+  #portfolio .subhead p a {
+  	border-bottom: 2px solid #BD3212;
+  	transition: color 0.5s ease;
+  }
+  #portfolio .subhead p a:hover {
+  	color: #BD3212;
+  }
 
-#portfolio .main-nav ul {
+#portfolio .subhead ul {
   margin-top: 3px;
   padding-left: 0; }
-  #portfolio .main-nav ul li {
-    border-left: 1px solid #969696;
+  #portfolio .subhead ul li {
     display: inline-block;
     padding: 0 3px 0 5px; }
-    #portfolio .main-nav ul li a {
+    #portfolio .subhead a {
       color: #969696;
       font-weight: 200;
       text-decoration: none;
       transition: color 0.2s ease; }
-    #portfolio .main-nav ul li a:hover {
+    #portfolio .contact-nav ul li a {
+    	padding: 0 3px;
+    }
+    #portfolio .contact-nav ul li a:hover {
       color: #BD3212;
       text-decoration: none; }
-  #portfolio .main-nav ul li:first-child {
+  #portfolio .contact-nav ul li:first-child {
     border-left: none; }
 
 #portfolio .contact-nav {
@@ -649,8 +662,8 @@ table {
         color: #BD3212; }
       #portfolio .contact-nav ul li i.fa-twitter:hover {
         color: #55ACEE; }
-      #portfolio .contact-nav ul li i.fa-tumblr:hover {
-        color: #35465C; }
+      #portfolio .contact-nav ul li i.fa-instagram:hover {
+        color: #8a3ab9; }
       #portfolio .contact-nav ul li i:visited {
         color: #969696;
         color: #BCBCBC; }
